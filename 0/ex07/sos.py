@@ -42,9 +42,23 @@ NESTED_MORSE = {
 
 
 def main():
-    """your docstring here"""
-    # your code here
-    pass
+    """Converts a string argument to morse code."""
+    args = sys.argv[1:]
+
+    if len(args) != 1:
+        print("AssertionError: the arguments are bad")
+        return
+
+    text = args[0].upper()
+    result = ""
+
+    for c in text:
+        if c not in NESTED_MORSE:
+            print("AssertionError: the arguments are bad")
+            return
+        result += NESTED_MORSE[c]
+
+    print(result.rstrip())
 
 
 if __name__ == "__main__":
