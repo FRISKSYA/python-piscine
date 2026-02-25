@@ -1,0 +1,9 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "ft_package"
+version = "0.0.1"
+summary = "A sample test package"
+# your metadata here (author, license, etc.)
